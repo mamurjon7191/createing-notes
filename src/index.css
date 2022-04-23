@@ -1,20 +1,26 @@
 :root {
   --color: rgb(0, 0, 0);
+  --color1: white;
 }
-.black {
-  background-color: var(--color);
+body {
+  background-color: var(--color1);
 }
 .html {
   font-size: 62.5%;
 }
 .header-title {
-  color: red;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-span {
-  color: black;
+.black {
+  color: var(--color);
 }
+
+span {
+  color: var(--color);
+}
+
 .header-title {
+  color: red;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
@@ -56,4 +62,64 @@ input {
 #search {
   padding: 1rem;
   font-size: 1.6rem;
+}
+.text-area {
+  border: 1px solid black;
+}
+.disable {
+  pointer-events: none;
+}
+.CardSide {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.card {
+  padding: 1rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(69, 105, 168),
+    rgb(0, 255, 221)
+  );
+}
+.text-area {
+  width: 98.5%;
+  height: 200px;
+  background: none;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 1.6rem;
+}
+textarea::placeholder {
+  color: var(--color1);
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+#trash {
+  font-size: 2rem;
+  color: rgb(238, 16, 16);
+  cursor: pointer;
+}
+.data {
+  font-size: 1.6rem;
+}
+.data1 {
+  font-size: 1.6rem;
+}
+.save-btn {
+  background-color: var(--color1);
+  font-size: 1.2rem;
+  border: none;
+  /* background: none; */
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  color: var(--color);
 }
